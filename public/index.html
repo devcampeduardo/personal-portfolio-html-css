@@ -1,43 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Personal Portfolio Eduardo Rebollar</title>
+  <!--Link to CSS-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="Icon" href="images/portfolio.ico">
+  <!-- Box Icons -->
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+      <a href="#" class="logo">Eduardo</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      <!-- Menu -->
+      <ul class="menu">
+          <li><a href="#home"onclick="toggleMenu();">Home</a></li>
+          <li><a href="#about"onclick="toggleMenu();">About</a></li>
+          <li><a href="#services"onclick="toggleMenu();">Services</a></li>
+          <li><a href="#work"onclick="toggleMenu();">Work</a></li>
+          <li><a href="#contact"onclick="toggleMenu();">Contact</a></li>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+          
+      </ul>
+  </nav>
+  <!-- Main Text and Image -->
+  <section id="home">
+      <div class="home-text">
+          <h1>Hy, I'm<br>Eduardo <span>Rebollar </span><br>Web Developer</h1>
+          <!-- Button -->
+          <a href="#contact">Hire Me</a>
+      </div>
+       <!-- Home Image -->
+       <div class="home-">
+       <img src="images/profile.png" alt="">
+    </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- Social -->
+    <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></a></i>
+        <a href="#"><i class='bx bxl-instagram'></a></i>
+        <a href="#"><i class='bx bxl-github'></a></i>
+        <a href="#"><i class='bx bxl-whatsapp'></a></i>
+       </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+      <div class="heading">
+          <h2>About</h2>
+          <p>My Introduction</p>
+      </div>
+      <!-- About Content -->
+      <div class="about-content">
+          <div class="about-img">
+              <img src="images/soy.png" alt="">
+          </div>
+          <div class="about-text">
+              <h1>I'm Eduardo</h1>
+              <p>I believe in overcoming your goals and there are always opportunities to study and be better. So I decided to study something that would focus me in the future and not just stay in customer service which is great! and that's what I have dedicated myself to throughout my career as a professional in different companies. I studied at Bottega University the Full Stack Developer program and now I see a dream come true, and it allows me to look for a better job and improve my quality of life</p>
+              <a href="RESUME.pdf" target="_blank">Download Cv</a>
+          </div>
+      </div>
+  </section>
+
+<!-- Services -->
+<section id="services">
+    <!-- heading -->
+    <div class="heading">
+        <h2>Services</h2>
+        <p>Skills</p>
+    </div>
+        <div class="services-content">
+            <!-- Box -->
+            <div class="box">
+                <img src="images/html.png" alt="">
+                <h1>HTML Project</h1>
+                <p>Basic HTML Structure Overview,HTML Links, Flexbox, CSS Cascading Process Works,HTML Links, HTML Classes and IDs,Basic HTML Website Structure, tags such as head tag, div tag, span tag.</p>
+            </div>
+
+            <!-- Box -->
+            <div class="box">
+                <img src="images/css.png" alt="">
+                <h1>CSS Project</h1>
+                <p>Use CSS best practices with style sheets, CSS selectors, CSS animations, borders and styling of tables.</p>
+            </div>
+
+            <!-- Box -->
+            <div class="box">
+                <img src="images/python.png" alt="">
+                <h1>Python Backend</h1>
+                <p>Python String Basics, Python String Case Functions,Flask Application, Flask Database and API Features, SQLite Database in Flask with SQLAlchemy, API Endpoint in Flask, Backend Python, Inline and Multi Line Comments in Python, Dynamic Reducer in Python.</p>
+            </div>
+
+            <!-- Box -->
+            <div class="box">
+                <img src="images/mysql.png" alt="">
+                <h1>My SQL database</h1>
+                <p>CRUD, Adding Records to a MySQL Database, SQL Queries with the: 'where', 'and', 'or' Commands, SQL Code with the WHERE/IN Command, Alias Table Names in SQL</p>
+            </div>
+
+            <!-- Box -->
+            <div class="box">
+                <img src="images/javascript.png" alt="">
+                <h1>Javascript Project</h1>
+                <p>Run JavaScript Programs, String Functions, Building Functions in JavaScript, Order of Operations in JavaScript, JavaScript Conditional, Basic Syntax for Building Functions in JavaScript
+                    </p>
+            </div>
+
+            <!-- Box -->
+            <div class="box">
+                <img src="images/react.png" alt="">
+                <h1>React Project</h1>
+                <p>Render Images in React from an API, Custom Fonts in React, Text and Images on a Background Image in React, Babel, Package.json File, Pushing Application Code to GitHub, React Components</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <div class="heading">
+            <h2>Work</h2>
+            <p>Work Experience</p>
+        </div>
+        <div class="work-content">
+            <div class="work-text">
+                <h1>SAMS CLUB MEXICO</h1>
+                <p>Deputy Manager, in the areas of customer service and sales.  Since March 2008 - May 2015 
+                    Knowledge of reports and their management, lead and develop other employees. </p>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="work-img">
+                <img src="images/imagen2.jpg" alt="">
+            </div>
+        </div>
+
+            <div class="work-content">
+                <div class="work-text">
+                    <h1>WEGLON MEXICO</h1>
+                    <p>International representative.
+                        Since Feb 2018- April 2019
+                        Worldwide education for students in Mexico 
+                        I worked on educational trips to countries such as USA and Japan</p>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="work-img">
+                    <img src="images/imagen5.jpg" alt="">
+                </div>
+            </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="heading color">
+            <h2>Contact</h2>
+            <p>Leave a message I will try to reply in 24 hours.</p>
+        </div>
+        <div class="contact-content">
+            <div class="app">
+                <h1>Connect With me <br> By the Apps</h1>
+                <a href="#"><i class='bx bxl-play-store'></i></a>
+                <a href="#"><i class='bx bxl-apple'></i></a>
+            </div>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/ec7be7ea78f40e62adb5a133fdc74fff" method="POST">
+                    <input type="text" name="name" placeholder="Name"  required /> 
+                    <input type="email" name="email" placeholder="Your E-mail" required  /> 
+                    <textarea type="text" name="message" placeholder="Your message here..." name="" id="" cols="30" rows="10" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; Tourist All Right Reserved</p>
+    </div>
+
+    <!-- Scroll Animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Link to Js -->
+    <script src="main.js"></script>
+
+
+
+</body>
 </html>
